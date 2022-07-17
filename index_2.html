@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>ただの怪文書</title>
-        <link rel="stylesheet" href="cascade/CSS.css">
+        <link rel="stylesheet" href="cascade/csm.css">
     </head>
     <body>
         <h1>とある男のホームページ</h1>
@@ -13,18 +13,24 @@
         </header>
         <div>
             <h2>GAME CORNER</h2>
-            <h3>黒ひげ危機一髪</h3>
-            <button type="button" onclick="sting(0)" id="rule">ここをクリックしてルールを確認</button>
-            <br><br>
             <div>
-                <button type="button" onclick="sting(1)" id="button_1">突き刺す</button>
-                <button type="button" onclick="sting(2)" id="button_2">突き刺す</button>
-                <button type="button" onclick="sting(3)" id="button_3">突き刺す</button><br>
-                <button type="button" onclick="sting(4)" id="button_4">突き刺す</button>
-                <button type="button" onclick="sting(5)" id="button_5">突き刺す</button><br>
+                <h3>黒ひげ危機一髪</h3>
+                <button type="button" onclick="sting(0)" id="rule">ここをクリックしてルールを確認</button>
+                <br><br>
+                <button class="switch" type="button" onclick="sting(1)" id="button_1">突き刺す</button>
+                <button class="switch" type="button" onclick="sting(2)" id="button_2">突き刺す</button>
+                <button class="switch" type="button" onclick="sting(3)" id="button_3">突き刺す</button><br><br>
+                <button class="switch" type="button" onclick="sting(4)" id="button_4">突き刺す</button>
+                <button class="switch" type="button" onclick="sting(5)" id="button_5">突き刺す</button><br>
+                <p id="result">ここに結果を表示</p>
             </div>
-            <p id="result">ここに結果を表示</p>
+            
+            <div>
+                <h3>おみくじ</h3>
+                <button class="omi" type="button" onclick="predict(1)" id="predict">ここをクリックして運勢をチェック</button>
 
+                <p id="luck">ここに注目</p>
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 

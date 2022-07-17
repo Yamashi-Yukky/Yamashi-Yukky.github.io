@@ -1,9 +1,11 @@
 @charset "utf-8";
-
 body{
     background-color: greenyellow;
     font-size: 10.5px;
 };
 p{
     font-family: serif;
+}
+ol > li{
+    size: 15px;
 }
