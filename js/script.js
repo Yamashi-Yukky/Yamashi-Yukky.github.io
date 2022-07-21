@@ -1,8 +1,11 @@
+function explain(mes){
+    if(mes == 0){
+    alert('5個のボタンのどれか一つは起爆スイッチになっています.起爆スイッチを押すとGAMEOVERとなります。')
+    }
+}
 function sting(judge){
     let message = '';
-    if(judge == 0){
-        alert('5個のボタンのどれか一つは起爆スイッチになっています.起爆スイッチを押すとGAMEOVERとなります。')
-    }
+    
     let rand = Math.floor(Math.random()*5) + 1;
     console.log(rand);
     if(judge == rand){
@@ -41,5 +44,5 @@ function predict(num){
 }
 
 function hyouji(num){
-    
+
 }
