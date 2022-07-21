@@ -39,3 +39,7 @@ function predict(num){
     const id =document.querySelector('#luck');
     id.textContent = luck + '!!';
 }
+
+function hyouji(num){
+    
+}

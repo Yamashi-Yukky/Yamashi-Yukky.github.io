@@ -1,64 +1,40 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>ただの怪文書</title>
-    <link rel="stylesheet" href="cascade/CSS.css">
-</head>
-<body>
-    <h1>とある男のホームページ</h1>
-    <header>
-        <a href="https://yamashi-yukky.github.io/index_2.html">二つ目のページはこちらをクリック</a><br>
-    </header>
-    <div>
-        <p>ここでは人工知能(以下AI)がどの様に進化してきたのかについて紹介したい。</p>
-        <ol>
-            <li>チャプター1 … <a href="#chapter1">AIの始まり</a></li>
-            <li>チャプター2 … <a href="#chapter2"> 1回目の進化</a></li>
-            <li>チャプター3 … <a href="#chapter3">二回目の進化と現在</a></li>
-
-        </ol>
-        
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ただの怪文書</title>
+        <link rel="stylesheet" href="cascade/csm.css">
+    </head>
+    <body>
+        <h1>とある男のホームページ</h1>
+        <header>
+            <a href="https://yamashi-yukky.github.io/index_2.html">二つ目はこちら</a><br>
+        </header>
         <div>
-            <h2>AIの歴史</h2>
+            <h2>GAME CORNER</h2>
             <div>
-                <h3 id="chapter1">チャプター1…AIの始まり</h3>
-                <img src="img/1949691.jpg" alt="research" width="200">
-                <p>　人類が人工知能を作り始めたのは実は1960年代からである。
-                そのきっかけとなったのがイギリスのアラン･チューリングが提唱した｢機械は考えることが出来るか｣という問いである。
-                この問いを解決すべく、多くの科学者が人間のように考えることができる機械を開発するようになった。
-                これにより人類初のAIが誕生した。</p>
-                <p>　初期に開発されたAIは強い枠組みが存在するものに対して大きな効果を発揮することが開発を進めていく中で分かってきた。
-                しかし、当時のAIでは複雑な社会の問題に対して太刀打ちできないことも徐々に判明していった。
-                そのため、開発者が段々と減少していきAIの開発は落ち着いてしまった。    
-                </p>    
+                <h3>黒ひげ危機一髪</h3>
+                <button type="button" onclick="sting(0)" id="rule">ここをクリックしてルールを確認</button>
+                <br><br>
+                <button class="switch" type="button" onclick="sting(1)" id="button_1">突き刺す</button>
+                <button class="switch" type="button" onclick="sting(2)" id="button_2">突き刺す</button>
+                <button class="switch" type="button" onclick="sting(3)" id="button_3">突き刺す</button><br><br>
+                <button class="switch" type="button" onclick="sting(4)" id="button_4">突き刺す</button>
+                <button class="switch" type="button" onclick="sting(5)" id="button_5">突き刺す</button><br>
+                <p id="result">ここに結果を表示</p>
             </div>
+            
             <div>
-                <h3 id="chapter2">チャプター2 … 1回目の進化</h3>
-                <img src="img/watermark.jpg" alt="artifical intelligence" width="200">
-                <p>　1980年代、専門家の知識をAIに教え込むことで、AIが専門家のように課題を解決しようとするエキスパートシステムによってAIに最初の転換期が起こった。
-                しかし、当時は人間が手動で知識をコンピュータに入力する必要があり実装までに時間がかかり過ぎる、例外処理に対応できないといった弱点があったため、ブームは再び衰退いていく。</p>
-                <p>　とはいえこの時期には音声認識やデータマイニングなどの今なお使われている技術が開発されているのでこの時期に登場したAIの凄さも理解しておくべきだろう。</p>
-            </div>
-            <div>
-                <h3 id="chapter3">チャプター3 … 二回目の進化と現在</h3>
-                <img src="img/1826416_s.jpg" alt="future machine" width="200">
-                <p>　2000年代にディープラーニングが提唱されたことによってAIの2度目の転換期が起こった。
-                前回と違ってAI自身が知識を獲得できるようになり、さらにビッグデータと呼ばれる従来とは比べ物にならないほど膨大なデータ群を用いることでAIに出来ることが増えてきた。
-                </p>
-                <p>　今では昔以上にデータが場所を問わず収集できるため、今もなおAIは進化を続けている。</p>
-            </div>
-            <div>
-                <h3>参考文献</h3>
-                <ul>
-                    <li>Ledge.ai「AI(人工知能)の歴史―時系列で簡単解説」(2020、6月17日)https://ledge.ai/history-of-ai/</li>
-                    <li>総務省「平成28年版 情報通信白書人工知能（AI）研究の歴史」(2016年)
-                        https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h28/html/nc142120.html</li>
-                </ul>
+                <h3>おみくじ</h3>
+                <button class="omi" type="button" onclick="predict(1)" id="predict">ここをクリックして運勢をチェック</button>
+
+                <p id="luck">ここに注目</p>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-    </div>
-    <script></script>
-</body>
+
+        <script src="./js/jQuery.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
