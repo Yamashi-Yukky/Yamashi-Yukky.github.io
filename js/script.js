@@ -1,7 +1,12 @@
 function explain(mes){
+    let message ='';
     if(mes == 0){
     alert('5個のボタンのどれか一つは起爆スイッチになっています.起爆スイッチを押すとGAMEOVERとなります。')
+    message = 'GAMESTART!!';
     }
+
+    const id =document.querySelector('#result');
+    id.textContent = message;
 }
 function sting(judge){
     let message = '';

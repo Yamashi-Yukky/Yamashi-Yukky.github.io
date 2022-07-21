@@ -1,0 +1,15 @@
+@charset "utf-8";
+body{
+    background-color: greenyellow;
+};
+p{
+    font-size: 21px;
+}
+ol{
+    padding: 0.5em 1;
+    margin: 2em ;
+    border: double 5px #4ec4d3;
+}
+li{
+    font-size: 17px;
+}
